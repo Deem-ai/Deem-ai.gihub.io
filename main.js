@@ -1,4 +1,4 @@
-
+//Scroll on click
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,3 +7,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//detect user scroll
+/**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
