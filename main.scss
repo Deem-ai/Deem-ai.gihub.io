@@ -1,0 +1,90 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+#intro {
+    background-image: radial-gradient(circle, #5a487f, #434473, #313f65, #233855, #1c3144);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    position: relative;
+}
+
+.hr-light {
+    height: 1px;
+    width: 90%;
+    color: gray;
+    background-color: white;
+    border: none;
+    }
+.hr-dark {
+    height: 1px;
+    color: gray;
+    background-color: black;
+    border: none;
+}
+
+.card-img-side{
+    height: 15em;
+    width: 15em;
+}
+.card{
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+  
+.team-member img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+}
+  
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+  
+.team-member p {
+    margin-top: 0;
+}
+
+.button-social{
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    outline: 0;
+    background-color: black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.button-social:hover{
+    background-color: darkslateblue;
+}
+
+.button-social i{
+    color:white;
+}
+
+.footer-ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
