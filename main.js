@@ -8,10 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-//detect user scroll
-/**
- * Listen to scroll to change header opacity class
- */
 function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 

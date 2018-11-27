@@ -27,13 +27,9 @@ body {
   background-color: black;
   border: none; }
 
-.card-img-side {
+.card-side {
   height: 15em;
   width: 15em; }
-
-.card {
-  background-color: transparent !important;
-  border: transparent !important; }
 
 .team-member {
   margin-bottom: 50px;
