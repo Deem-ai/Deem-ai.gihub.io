@@ -4,6 +4,8 @@
   "description": "deem-ai web",
   "main": "index.js",
   "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +16,8 @@
     "jquery": "^3.3.1",
     "node-sass": "^4.10.0",
     "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "pm2": "^3.2.2"
   }
 }
