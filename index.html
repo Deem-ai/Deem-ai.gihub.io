@@ -6,11 +6,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
         <header>
             <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <div class="container">
-                    <a href="#intro" class="navbar-brand">
+                    <a href="#intro" class="navbar-brand" id="navbarBrand">
                         <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" width="30" height="30"
                             alt="">
                         Deem-ai
@@ -20,15 +20,21 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">Sobre Nosotros</a>
+                                <a class="nav-link" href="#product">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#characteristics">Característcas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#our-team">Nuestro Equipo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact-us">Contactenos</a>
+                                <a class="nav-link" href="#about-us">Que hacemos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">Contáctenos</a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +50,7 @@
                             <!-- Divider -->
                             <hr class="hr-light">
                             <!-- Description -->
-                            <h4 class="text-white my-4">Creating solutions for the marketing of the future</h4>
+                            <h4 class="text-white my-4">Creating solutions for the market of the future</h4>
                             <button type="button" class="btn btn-outline-white">Read more</button>
                         </div>
                     </div>
@@ -54,11 +60,258 @@
         </header>
         <main>
             <div class="container">
-                <section id="about">
-                    <div class="row mt-5 mb-5">
+                <section id="product">
+                    <div class="row padding-titles">
+                        <div class="mx-auto col-md-8 text-center">
+                            <h1>¿Por qué nuestra solución?</h1>
+                            <p class="text-muted">En deem-ai creemos que la experiencia de usuario...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
                         <div class="col-md text-center">
-                            <h1>About Us</h1>
-                            <p class="text-muted">mememe</p>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <div class="thumbnail-desc align-self-center">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Razón 1
+                                        </h5>
+                                        <hr class="hr-dark">
+                                        <p class="card-text">texto breve con característica....</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="thumbnail-desc align-self-center">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Razón 2
+                                        </h5>
+                                        <hr class="hr-dark">
+                                        <p class="card-text">texto breve con característica.... asdadasdsa</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="thumbnail-desc align-self-center">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Razón 3
+                                        </h5>
+                                        <hr class="hr-dark">
+                                        <p class="card-text">texto breve con característica....</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="characteristics">
+                    <div class="row padding-titles">
+                        <div class="mx-auto col-md-8 text-center">
+                            <h1>Características</h1>
+                            <p class="text-muted">digan algo aqui</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 1
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 2
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 3
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/mockup-phone.png" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 4
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 5
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="thumbnail-desc-sm align-self-center">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Característica 6
+                                    </h5>
+                                    <hr class="hr-dark">
+                                    <p class="card-text">texto breve con característica....</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="our-team">
+                    <div class="row padding-titles mb-5">
+                        <div class="col-md text-center">
+                            <h1>Nuestro Equipo</h1>
+                            <p class="text-muted">Escriba algo breve</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
+                                <h4>Andres Calvo</h4>
+                                <p class="text-muted">xD</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-twitter "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-linkedin-in "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
+                                <h4>Valentina Castaño</h4>
+                                <p class="text-muted">:o</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-twitter "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-linkedin-in "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
+                                <h4>Edwin Mahecha</h4>
+                                <p class="text-muted">:b</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-linkedin-in "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
+                                <h4>Miguel Ortiz</h4>
+                                <p class="text-muted">:'v</p>
+                                <ul class="list-inline social-buttons">
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-twitter "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item button-social">
+                                        <a href="#">
+                                        <i class="fab fa-linkedin-in "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about-us">
+                    <div class="row padding-titles mb-5">
+                        <div class="col-md text-center">
+                            <h1>Que hacemos</h1>
+                            <p class="text-muted">Escriba algo breve</p>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -67,162 +320,51 @@
                         </div>
                         <div class="col-md-8">
                             <div class="px-3">
-                                    <h4 mb-3">Lorem ipsum dolor sit amet</h4>
-                                    <hr class="hr-dark">
-                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <hr class="hr-dark">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row text-center mt-5">
-                            <div class="col-md-4 order-md-12 align-self-center">
-                                <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="card-side rounded-circle">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="px-3">
-                                        <h4 mb-3">Lorem ipsum dolor sit amet</h4>
-                                        <hr class="hr-dark">
-                                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
+                        <div class="col-md-4 order-md-12 align-self-center">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="card-side rounded-circle">
                         </div>
-                </section>
-                <section id="our-team">
-                    <div class="row mt-5 mb-5">
-                        <div class="col-md text-center">
-                            <h1>Our Team</h1>
-                            <p class="text-muted">mememe</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
-                                <h4>Kay Garland</h4>
-                                <p class="text-muted">Lead Designer</p>
-                                <ul class="list-inline social-buttons">
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-twitter "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-facebook-f "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-linkedin-in "></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
-                                <h4>Kay Garland</h4>
-                                <p class="text-muted">Lead Designer</p>
-                                <ul class="list-inline social-buttons">
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-twitter "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-facebook-f "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-linkedin-in "></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
-                                <h4>Kay Garland</h4>
-                                <p class="text-muted">Lead Designer</p>
-                                <ul class="list-inline social-buttons">
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-twitter "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-facebook-f "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-linkedin-in "></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                        <div class="col-md-8">
+                            <div class="px-3">
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <hr class="hr-dark">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
-                                <h4>Kay Garland</h4>
-                                <p class="text-muted">Lead Designer</p>
-                                <ul class="list-inline social-buttons">
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-twitter "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-facebook-f "></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item button-social">
-                                        <a href="#">
-                                        <i class="fab fa-linkedin-in "></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="row text-center mt-5">
+                        <div class="col-md-4 align-self-center">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="card-side rounded-circle">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="px-3">
+                                <h4>Lorem ipsum dolor sit amet</h4>
+                                <hr class="hr-dark">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                                <div class="team-member">
-                                    <img class="mx-auto rounded-circle" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" alt="">
-                                    <h4>Kay Garland</h4>
-                                    <p class="text-muted">Lead Designer</p>
-                                    <ul class="list-inline social-buttons">
-                                        <li class="list-inline-item button-social">
-                                            <a href="#">
-                                            <i class="fab fa-twitter "></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item button-social">
-                                            <a href="#">
-                                            <i class="fab fa-facebook-f "></i>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item button-social">
-                                            <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>    
                     </div>
                 </section>
                 <section id="contact-us">
-                    <div class="row mt-5 mb-5">
+                    <div class="row padding-titles mb-5">
                             <div class="col-md text-center">
                                 <h1>Contact us</h1>
                                 <p>Fill the form</p>
