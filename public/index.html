@@ -371,27 +371,27 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="name"><strong>Nombre *</strong></label>
-                                            <input type="text" class="form-control" placeholder="Ingresa tu nombre *" id="name" required>
+                                            <input id="name" name="name" type="text" class="form-control" placeholder="Ingresa tu nombre *" required>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="lastName"><strong>Apellido *</strong></label>
-                                            <input type="text" class="form-control" placeholder="Ingresa tu apellido *" id="lastName" required>
+                                            <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Ingresa tu apellido *" required>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="email"><strong>Email *</strong></label>
-                                            <input class="form-control" type="email" placeholder="Ingresa tu email *" id="email" required>
+                                            <input id="email" name="email" class="form-control" type="email" placeholder="Ingresa tu email *" required>
                                             <small class="form-text text-muted">Nunca compartimos tu información </small>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="phone"><strong>Telefono</strong></label>
-                                            <input class="form-control" type="tel" placeholder="Ingresa tu telefono" id="phone">
+                                            <input id="phone" name="phone" class="form-control" type="tel" placeholder="Ingresa tu telefono">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="message"><strong>Mensaje *</strong></label>
-                                        <textarea class="form-control" id="message" placeholder="Ingresa un mensaje *" rows="3" required></textarea>
+                                        <textarea id="message" name="message" class="form-control" placeholder="Ingresa un mensaje *" rows="3" required></textarea>
                                     </div>
                                     <button class="btn callbtn" type="submit">Enviar</button>
                                 </form>
@@ -455,5 +455,6 @@
         <script src="scripts/popper.js/dist/umd/popper.min.js"></script>
         <script src="scripts/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+
     </body>
 </html>
