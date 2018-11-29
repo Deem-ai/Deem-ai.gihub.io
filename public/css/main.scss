@@ -4,9 +4,9 @@
 
 //Color scheme
 $theme-colors: (
-    "blue" : #255C99,
-    "primary": #ABEF00,
-    "secondary": #B9C1BC,
+    "primary" : #255C99,
+    "secondary": #ABEF00,
+    "gray": #B9C1BC,
     "light": #F5F8F4,
     "dark": #020216
 );
@@ -133,7 +133,11 @@ body {
 }
 
 .gray-section{
-    background-color: theme-color("secondary") !important;
+    background-color: theme-color("dark") !important;
+    color: theme-color("secondary");
+    .text-muted{
+        color:red;
+    }
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
