@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: 'ec2-34-220-163-199.us-west-2.compute.amazonaws.com',
+      host: 'ec2-35-164-189-242.us-west-2.compute.amazonaws.com',
       key: '~/.ssh/deem-ai-page.pem',
       ref: 'origin/master',
       repo: 'git@github.com:deem-ai/deem-ai.github.io.git',
