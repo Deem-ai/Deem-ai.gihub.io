@@ -58,14 +58,14 @@ body {
   height: 50px;
   border-radius: 100%;
   outline: 0;
-  background-color: #ABEF00;
+  background-color: #abef00;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   .button-social i {
-    color: #B9C1BC; }
+    color: #020216; }
 
 .button-social:hover {
-  background-color: darkslateblue; }
+  background-color: #90c900; }
 
 .footer-ul {
   text-align: center;

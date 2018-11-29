@@ -75,14 +75,14 @@ body {
     height: 50px;
     border-radius: 100%;
     outline: 0;
-    background-color: theme-color("primary");
+    background-color: theme-color-level("primary",0);
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    i{color:theme-color("secondary");}
+    i{color:theme-color("dark");}
 }
 
 .button-social:hover{
-    background-color: darkslateblue;
+    background-color: theme-color-level("primary",+2);
 }
 
 .footer-ul{
