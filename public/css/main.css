@@ -62,7 +62,7 @@ body {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s; }
   .button-social i {
-    color: #020216; }
+    color: #ABEF00; }
 
 .button-social:hover {
   background-color: #1f4d81; }
@@ -86,7 +86,7 @@ body {
   outline: 0;
   background-color: #255C99; }
   .thumbnail-desc i, .thumbnail-desc-sm i {
-    color: white; }
+    color: #ABEF00; }
 
 .thumbnail-desc {
   font-size: 30px;
@@ -106,9 +106,7 @@ body {
 
 .gray-section {
   background-color: #020216 !important;
-  color: #ABEF00; }
-  .gray-section .text-muted {
-    color: red; }
+  color: #F5F8F4; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

@@ -78,7 +78,7 @@ body {
     background-color: theme-color-level("primary",0);
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    i{color:theme-color("dark");}
+    i{color:theme-color("secondary");}
 }
 
 .button-social:hover{
@@ -107,7 +107,7 @@ body {
     outline: 0;
     background-color: theme-color("primary");
     i{
-        color: white;
+        color: theme-color("secondary");
     }
 }
 
@@ -134,10 +134,7 @@ body {
 
 .gray-section{
     background-color: theme-color("dark") !important;
-    color: theme-color("secondary");
-    .text-muted{
-        color:red;
-    }
+    color: theme-color("light");
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

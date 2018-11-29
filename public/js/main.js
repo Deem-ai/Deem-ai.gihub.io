@@ -3,7 +3,6 @@ function checkScroll(){
 
     if($(window).scrollTop() > startY){
         $('.navbar').addClass("bg-dark");
-        $('.navbar').addClass("navbar-dark");
     }else{
         $('.navbar').removeClass("bg-dark");
     }
