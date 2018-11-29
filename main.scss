@@ -1,3 +1,12 @@
+//Color scheme
+$theme-colors: (
+    "blue" : #255C99,
+    "white": #F5F8F4,
+    "primary": #ABEF00,
+    "secondary": #B9C1BC,
+    "light": #F5F8F4,
+    "dark": #020216
+);
 html,
 body,
 header,
@@ -61,7 +70,7 @@ body {
     height: 50px;
     border-radius: 100%;
     outline: 0;
-    background-color: black;
+    background-color:blue;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     i{color:white;}
@@ -88,7 +97,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: white;
+    background: c-blue;
 }
 
 
@@ -120,5 +129,8 @@ body {
 
 .card{
     border: none !important;
+    
 }
+
+
 @import "node_modules/bootstrap/scss/bootstrap";
