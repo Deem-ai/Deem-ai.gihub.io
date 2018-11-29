@@ -2,9 +2,9 @@ function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
     if($(window).scrollTop() > startY){
-        $('.navbar').addClass("scrolled");
+        $('.navbar').addClass("bg-dark");
     }else{
-        $('.navbar').removeClass("scrolled");
+        $('.navbar').removeClass("bg-dark");
     }
 }
 
@@ -15,7 +15,7 @@ if($('.navbar').length > 0){
 }
 
 //smooth scroll
-$("#navbarNav a, #navbarBrand").on('click', function(event) {
+$("#navbarNav a, #navbarBrand, #main-btn").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
