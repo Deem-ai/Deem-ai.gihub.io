@@ -65,6 +65,13 @@ function readyFn( jQuery ){
         function(){ $(this).addClass('bg-dark') },
         function(){ $(this).removeClass('bg-dark') }
     )
+
+    $('.carousel').slick({
+        dots : true,
+        slidesToShow: 1,
+        centerMode: true,
+        infinite: true
+    });
 }
 
 $(document).ready(readyFn);
