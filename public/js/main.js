@@ -1,3 +1,4 @@
+/*
 function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
@@ -13,6 +14,7 @@ if($('.navbar').length > 0){
         checkScroll();
     });
 }
+*/
 
 //smooth scroll
 $("#navbarNav a, #navbarBrand, #main-btn").on('click', function(event) {
@@ -58,6 +60,11 @@ function readyFn( jQuery ){
         });
 
     });
+
+    $("#nav").hover(
+        function(){ $(this).addClass('bg-dark') },
+        function(){ $(this).removeClass('bg-dark') }
+    )
 }
 
 $(document).ready(readyFn);
