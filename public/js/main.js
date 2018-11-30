@@ -60,12 +60,12 @@ function readyFn( jQuery ){
         });
 
     });
-
+    /*
     $("#nav").hover(
         function(){ $(this).addClass('bg-dark') },
         function(){ $(this).removeClass('bg-dark') }
     )
-
+    */
     $('.carousel').slick({
         dots : true,
         slidesToShow: 1,
