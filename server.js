@@ -31,16 +31,12 @@ app.post('/contact', function (req, res) {
         subject: 'New message from contact form at deem-ai.com.co',
         text: `${req.body.name} ${req.body.lastName} (${req.body.email}, ${req.body.phone}) says: ${req.body.message}`
     };
-
-    console.log('nice');
-
-    /*
     transporter.sendMail(mailOptions, function (err, info) {
         if (err) {
-            res.json({sucess: false});
+            res.json({sucess: false, status: 500});
         }else{
-            res.json({success: true});
+            res.json({success: true, status : 200});
         }
     });
-    */
+    
 });

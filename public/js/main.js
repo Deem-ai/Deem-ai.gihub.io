@@ -41,13 +41,22 @@ $("#navbarNav a, #navbarBrand, #main-btn").on('click', function(event) {
   });
 
 function readyFn( jQuery ){
+    //catch submit and send POST
     $("#contact-form").on('submit', function( event ) {
         event.preventDefault();
         $.ajax({
-            url : '/contact',
             type : 'POST',
-            data : $(this).serialize;
+            url : '/contact',
+            data : $(this).serialize(),
+            dataType: 'json',
+            success : function(customer) {
+                alert('Sucess');
+            },
+            error : function(e) {
+                alert("Error!")
+            }
         });
+
     });
 }
 

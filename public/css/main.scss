@@ -137,4 +137,21 @@ body {
     color: theme-color("light");
 }
 
+@font-face {
+    font-family: FunCityLevel2Stencil;
+    src: url("../fonts/FunCityLevel2Stencil.otf") format("opentype");
+}
+
+.fun{
+    font-family: FunCityLevel2Stencil;
+}
+
+.main-font{
+    font-family: 'Comfortaa', cursive;
+}
+
+.scnd-font{
+    font-family: 'Raleway', sans-serif;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
