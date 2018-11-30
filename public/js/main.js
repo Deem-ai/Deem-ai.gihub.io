@@ -52,10 +52,10 @@ function readyFn( jQuery ){
             data : $(this).serialize(),
             dataType: 'json',
             success : function(customer) {
-                alert('Sucess');
+                alert('Exito');
             },
             error : function(e) {
-                alert("Error!")
+                alert('Error, intenta de nuevo por favor.')
             }
         });
 
@@ -69,10 +69,10 @@ function readyFn( jQuery ){
             data : $(this).serialize(),
             dataType: 'json',
             success : function(customer) {
-                alert('Sucess');
+                alert('Exito');
             },
             error : function(e) {
-                alert("Error!")
+                alert('Error, intenta de nuevo por favor.');
             }
         });
 
