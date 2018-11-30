@@ -60,6 +60,24 @@ function readyFn( jQuery ){
         });
 
     });
+
+    $("#register").on('submit', function( event ) {
+        event.preventDefault();
+        $.ajax({
+            type : 'POST',
+            url : '/register',
+            data : $(this).serialize(),
+            dataType: 'json',
+            success : function(customer) {
+                alert('Sucess');
+            },
+            error : function(e) {
+                alert("Error!")
+            }
+        });
+
+    });
+
     /*
     $("#nav").hover(
         function(){ $(this).addClass('bg-dark') },

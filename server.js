@@ -38,5 +38,31 @@ app.post('/contact', function (req, res) {
             res.json({success: true, status : 200});
         }
     });
-    
+
+});
+
+app.post('/register', function (req, res) {
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: GMAIL_USER,
+          pass: GMAIL_PASS
+        }
+    });
+
+    const mailOptions = {
+        from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+        to: GMAIL_USER,
+        subject: 'New register from contact form at deem-ai.com.co',
+        text: `${req.body.name} ${req.body.lastName} (${req.body.email}, ${req.body.phone})`
+    };
+    transporter.sendMail(mailOptions, function (err, info) {
+        if (err) {
+            res.json({sucess: false, status: 500});
+        }else{
+            res.json({success: true, status : 200});
+        }
+    });
+
 });
