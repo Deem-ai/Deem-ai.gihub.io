@@ -158,4 +158,28 @@ body {
     text-align: justify;
 }
 
+//slick
+.slick-carousel {
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    color: #333;
+}
+  
+.slick-slide {
+    text-align: center;
+}
+.slick-prev, .slick-next{
+    position: absolute !important;
+}
+
+.slick-dots li button:before {
+    color: theme-color("secondary") !important;
+}
+.slick-dots{
+    bottom: 3% !important;
+}
+.slick-prev:before, .slick-next:before { 
+    color:theme-color("secondary") !important;
+}
 @import "../../node_modules/bootstrap/scss/bootstrap";

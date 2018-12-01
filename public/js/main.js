@@ -87,3 +87,12 @@ function readyFn( jQuery ){
 }
 
 $(document).ready(readyFn);
+
+$(".single-item").slick({
+    dots: true,
+    adaptativeHeight: true,
+    autoplay: true,
+    autoplaySpeed:3000,
+});
+
+
