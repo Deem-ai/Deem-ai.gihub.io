@@ -9,13 +9,19 @@ function handleResponse(res){
 }
 
 function paperToggle(button){
-    var icon = button.children("span").children("i");
+    var btntext = button.children(":nth-child(1)"), icon = button.children(":nth-child(2)").children("i");
+    console.log(text);
     var add = 'fa-paper-plane', remove = 'fa-spinner fa-pulse';
+    var text = 'Enviar', disabled = false;
     if(icon.hasClass('fa-paper-plane')){
         var c = add, add = remove, remove = c;
+        text = 'Enviando';
+        disabled = true;
     }
     icon.removeClass(remove);
     icon.addClass(add)
+    button.prop('disabled', disabled);
+    btntext.text(text);
 }
 
 function readyFn( jQuery ){
