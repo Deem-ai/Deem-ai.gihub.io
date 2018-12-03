@@ -11,15 +11,9 @@ $theme-colors: (
     "dark": #020216
 );
 
-html,body, header, #intro {
+html, body, header, #intro {
     height: 100%;
 }
-
-main{
-    //Makes sticky footer
-    min-height: calc(100vh - 13.125rem);
-}
-
 #intro {
     background-image:url("../img/cover3.jpg");
     background-color: theme-color-level("dark",-2);
@@ -33,6 +27,12 @@ main{
 body {
     position: relative;
 }
+
+main{
+    //Makes sticky footer
+    min-height: calc(100vh - 13.125rem);
+}
+
 .padding-titles{
     padding-top: 5em;
 }
@@ -169,11 +169,7 @@ body {
     width: 80%;
     color: #333;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 67e2f59d8eb4847cd4a3a71763e0b117302bab99
 .slick-slide {
     text-align: center;
 }
@@ -187,11 +183,7 @@ body {
 .slick-dots{
     bottom: 3% !important;
 }
-<<<<<<< HEAD
 .slick-prev:before, .slick-next:before {
-=======
-.slick-prev:before, .slick-next:before { 
->>>>>>> 67e2f59d8eb4847cd4a3a71763e0b117302bab99
     color:theme-color("secondary") !important;
 }
 @import "../../node_modules/bootstrap/scss/bootstrap";
