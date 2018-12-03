@@ -24,7 +24,6 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 //https://codeburst.io/sending-an-email-using-nodemailer-gmail-7cfa0712a799
 
 function sendMail( mailOptions, res ){
-    return res.json({sucess: false, status: 500});
     transporter.sendMail( mailOptions, function(err, info) {
         if (err) {
             res.json({sucess: false, status: 500});

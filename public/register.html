@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="scripts/slick-carousel/slick/slick-theme.css"/>
     </head>
     <body data-spy="scroll" data-target=".navbar">
-        <header>
+        <header style="height:auto">
             <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <div class="container">
                     <a href="index.html" class="navbar-brand fun" id="navbarBrand">
@@ -25,47 +25,48 @@
 
                 </div>
             </nav>
-            <!--Mask-->
-            <main role="main" class="container">
-                <div class="row padding-titles mb-5">
-                        <div id ="contact-form-div" class="offset-md-3 col-md-6">
-                            <form id="register-form">
-                                <div class="form-row" >
-                                    <h1 class="main-font">Registro</h1>
+        </header>
+        <!--Mask-->
+        <main role="main" class="container">
+            <div class="row padding-titles mb-5">
+                    <div id ="contact-form-div" class="offset-md-3 col-md-6">
+                        <form id="register-form">
+                            <div class="form-row" >
+                                <h1 class="main-font">Registro</h1>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name" class="scnd-font"><strong>Nombre *</strong></label>
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="Ingresa tu nombre *" required>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="name" class="scnd-font"><strong>Nombre *</strong></label>
-                                        <input id="name" name="name" type="text" class="form-control" placeholder="Ingresa tu nombre *" required>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="lastName" class="scnd-font"><strong>Apellido *</strong></label>
-                                        <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Ingresa tu apellido *" required>
-                                    </div>
+                                <div class="form-group col-md-6">
+                                    <label for="lastName" class="scnd-font"><strong>Apellido *</strong></label>
+                                    <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Ingresa tu apellido *" required>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="email" class="scnd-font"><strong>Email *</strong></label>
-                                        <input id="email" name="email" class="form-control" type="email" placeholder="Ingresa tu email *" required>
-                                        <small class="form-text text-muted">Nunca compartimos tu información </small>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="phone" class="scnd-font"><strong>Telefono *</strong></label>
-                                        <input id="phone" name="phone" class="form-control" type="tel" placeholder="Ingresa tu telefono *" required>
-                                    </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email" class="scnd-font"><strong>Email *</strong></label>
+                                    <input id="email" name="email" class="form-control" type="email" placeholder="Ingresa tu email *" required>
+                                    <small class="form-text text-muted">Nunca compartimos tu información </small>
                                 </div>
-                                <button class="btn callbtn btn-secondary" type="submit">
-                                    Enviar
-                                    <span style="color: #255C99">
-                                        <i class="fas fa-paper-plane"></i>
-                                    </span>
-                                </button>
-                                <a role="button" class="btn callbtn btn-primary" href="index.html">Volver</a>
-                            </form>
-                        </div>
-                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="phone" class="scnd-font"><strong>Telefono *</strong></label>
+                                    <input id="phone" name="phone" class="form-control" type="tel" placeholder="Ingresa tu telefono *" required>
+                                </div>
+                            </div>
+                            <button class="btn callbtn btn-secondary" type="submit">
+                                Enviar
+                                <span style="color: #255C99">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                            <a role="button" class="btn callbtn btn-primary" href="index.html">Volver</a>
+                        </form>
+                    </div>
+            </div>
         </main>
-        <footer class="footer" style="bottom=0">
+        <footer class="footer">
             <div class="container-fluid text-secondary">
                 <div class="row bg-dark pt-5 pb-5">
                     <div class="col-md-4 align-self-center">

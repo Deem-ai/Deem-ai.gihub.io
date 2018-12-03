@@ -1,6 +1,8 @@
 function handleResponse(res){
-    if(res.sucess){
-        alert('Exito');
+    console.log(res);
+    console.log(res.success);
+    if(res.success){
+        alert('Éxito');
     }else{
         alert('Error, intenta de nuevo por favor.');
     }
@@ -51,6 +53,7 @@ function readyFn( jQuery ){
                 handleResponse(res);
             },
             error : function(e) {
+                console.log('why');
                 alert('Error, intenta de nuevo por favor.')
             }
         }).done(function(){
@@ -90,5 +93,3 @@ $(".single-item").slick({
     autoplay: true,
     autoplaySpeed:3000,
 });
-
-
