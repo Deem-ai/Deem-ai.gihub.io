@@ -1,9 +1,10 @@
 @charset "UTF-8";
-html,
-body,
-header,
-#intro {
+html, body, header, #intro {
   height: 100%;
+}
+
+main {
+  min-height: calc(100vh - 13.125rem);
 }
 
 #intro {
@@ -149,6 +150,33 @@ body {
 
 .justify-text {
   text-align: justify;
+}
+
+.slick-carousel {
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  color: #333;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.slick-prev, .slick-next {
+  position: absolute !important;
+}
+
+.slick-dots li button:before {
+  color: #ABEF00 !important;
+}
+
+.slick-dots {
+  bottom: 3% !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #ABEF00 !important;
 }
 
 /*!

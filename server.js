@@ -24,7 +24,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 //https://codeburst.io/sending-an-email-using-nodemailer-gmail-7cfa0712a799
 
 function sendMail( mailOptions, res ){
-
+    return res.json({sucess: false, status: 500});
     transporter.sendMail( mailOptions, function(err, info) {
         if (err) {
             res.json({sucess: false, status: 500});
@@ -38,7 +38,7 @@ app.post('/contact', function (req, res) {
     const mailOptions = {
         from: req.body.name + ' &lt;' + req.body.email + '&gt;',
         to: GMAIL_USER,
-        subject: 'New message from contact form at deem-ai.com.co',
+        subject: 'New message from contact form at deem-ai.com',
         text: `${req.body.name} ${req.body.lastName} (${req.body.email}, ${req.body.phone}) says: ${req.body.message}`
     };
     sendMail(mailOptions, res);
@@ -48,7 +48,7 @@ app.post('/register', function (req, res) {
     const mailOptions = {
         from: req.body.name + ' &lt;' + req.body.email + '&gt;',
         to: GMAIL_USER,
-        subject: 'New register from contact form at deem-ai.com.co',
+        subject: 'New register from register form at deem-ai.com',
         text: `${req.body.name} ${req.body.lastName} (${req.body.email}, ${req.body.phone})`
     };
     sendMail(mailOptions, res);
