@@ -15,3 +15,7 @@ nginx
 ELB + nginx 
 * [3 ways to setup SSL in AWS](https://hackernoon.com/how-to-set-up-https-for-your-domain-on-aws-8f771686603d)
 * [careful, for classic force entire site ssl nginx behind classic aws load balancer](https://codyparker.com/force-entire-site-ssl-nginx-behind-aws-load-balancer/)
+
+EC2 + node + nginx + let's encrypt
+
+* [Setting Up An HTTPS Server With Node, Amazon EC2, NGINX And Let’s Encrypt](https://blog.cloudboost.io/setting-up-an-https-sever-with-node-amazon-ec2-nginx-and-lets-encrypt-46f869159469)
