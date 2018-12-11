@@ -19,3 +19,5 @@ ELB + nginx
 EC2 + node + nginx + let's encrypt
 
 * [Setting Up An HTTPS Server With Node, Amazon EC2, NGINX And Let’s Encrypt](https://blog.cloudboost.io/setting-up-an-https-sever-with-node-amazon-ec2-nginx-and-lets-encrypt-46f869159469)
+
+https://bjornjohansen.no/redirect-to-https-with-nginx
