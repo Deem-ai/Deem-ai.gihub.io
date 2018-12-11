@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser')
 const app = express()
 
-app.use('/scripts', express.static(__dirname + '/node_modules/'))
+//app.use('/scripts', express.static(__dirname + '/node_modules/'))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'))
 
