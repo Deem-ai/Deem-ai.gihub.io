@@ -186,4 +186,27 @@ main{
 .slick-prev:before, .slick-next:before {
     color:theme-color("secondary") !important;
 }
+
+
+//whatsapp button
+
+#btn-whatsapp{
+    display: block;
+    border-radius: 100%;
+    position:fixed;
+    outline: 0;
+    background-color: #25D366;
+    font-size: 30px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    cursor: pointer;
+    i{
+        color: white;
+    }
+
+}
 @import "../../node_modules/bootstrap/scss/bootstrap";
