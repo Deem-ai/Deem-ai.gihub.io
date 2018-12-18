@@ -166,13 +166,14 @@ main {
   background: transparent;
   color: #B9C1BC;
   border-radius: 0%;
-  border-style: solid; }
+  transition: color 2s; }
 
 .nav-pills .nav-item .nav-link.active {
   background-color: transparent;
-  color: #F5F8F4;
+  color: #ABEF00;
   border-radius: 0%;
-  border-style: solid transparent; }
+  border-bottom: 2px solid;
+  transition: color 2s; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)

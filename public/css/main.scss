@@ -215,13 +215,14 @@ main{
     background: transparent;
     color:theme-color("gray");
     border-radius: 0%;
-    border-style:solid;
+    transition: color 2s;
 }
 .nav-pills .nav-item .nav-link.active {
     background-color: transparent;
-    color: theme-color("light");
+    color: theme-color("secondary");
     border-radius: 0%;
-    border-style:solid transparent;
+    border-bottom: 2px solid ;
+    transition: color 2s;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
