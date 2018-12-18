@@ -165,8 +165,14 @@ main {
 .nav-pills .nav-item .nav-link:not(.active) {
   background: transparent;
   color: #B9C1BC;
+  border-radius: 0%; }
+
+.nav-pills .nav-item .nav-link:not(.active):hover {
+  background: transparent;
+  color: #F5F8F4;
   border-radius: 0%;
-  transition: color 2s; }
+  border-bottom: 2px solid;
+  transition: color 0.5s; }
 
 .nav-pills .nav-item .nav-link.active {
   background-color: transparent;

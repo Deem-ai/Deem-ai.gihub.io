@@ -215,8 +215,16 @@ main{
     background: transparent;
     color:theme-color("gray");
     border-radius: 0%;
-    transition: color 2s;
 }
+
+.nav-pills .nav-item .nav-link:not(.active):hover {
+    background: transparent;
+    color: theme-color("light");
+    border-radius: 0%;
+    border-bottom: 2px solid ;
+    transition: color 0.5s;
+}
+
 .nav-pills .nav-item .nav-link.active {
     background-color: transparent;
     color: theme-color("secondary");
