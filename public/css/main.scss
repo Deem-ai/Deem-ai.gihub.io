@@ -210,4 +210,18 @@ main{
     }
 
 }
+//navpills
+.nav-pills .nav-item .nav-link:not(.active) {
+    background: transparent;
+    color:theme-color("gray");
+    border-radius: 0%;
+    border-style:solid;
+}
+.nav-pills .nav-item .nav-link.active {
+    background-color: transparent;
+    color: theme-color("light");
+    border-radius: 0%;
+    border-style:solid transparent;
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap";

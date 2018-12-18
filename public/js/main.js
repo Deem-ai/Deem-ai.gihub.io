@@ -106,6 +106,8 @@ $(document).ready(readyFn);
 $(".single-item").slick({
     dots: true,
     adaptativeHeight: true,
-    autoplay: true,
-    autoplaySpeed:3000,
+});
+
+$('.nav-pills a').on('show.bs.tab', function(event){
+    $('.single-item').slick('refresh');
 });
