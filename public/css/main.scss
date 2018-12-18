@@ -195,7 +195,8 @@ main{
     border-radius: 100%;
     position:fixed;
     outline: 0;
-    background-color: #25D366;
+    background: rgb(45,202,71);
+    background: linear-gradient(45deg, rgba(45,202,71,1) 0%, rgba(62,228,94,1) 100%);
     font-size: 30px;
     line-height: 60px;
     width: 60px;

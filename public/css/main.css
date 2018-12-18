@@ -149,7 +149,8 @@ main {
   border-radius: 100%;
   position: fixed;
   outline: 0;
-  background-color: #25D366;
+  background: #2dca47;
+  background: linear-gradient(45deg, #2dca47 0%, #3ee45e 100%);
   font-size: 30px;
   line-height: 60px;
   width: 60px;
